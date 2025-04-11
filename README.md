@@ -48,7 +48,7 @@ Installing the Nodejs 18 and git and cloned the git repository of TravelMemory a
 sudo apt update && sudo apt upgrade -y
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs git
-sudo git clone https://github.com/UnpredictablePrashant/TravelMemory
+sudo git clone https://github.com/UnpredictablePrashant/TravelMemory.git
 ```
 ## 📷 Screenshots 
 
@@ -88,7 +88,7 @@ node index.js
 ---
 ## Install nginx 
 ```bash
-Sudo apt install nginx
+sudo apt install nginx
 sudo systemctl status nginx 
 ```
 ## Screenshots
@@ -132,7 +132,7 @@ proxy_pass http:localhost:3000;
 
 ---
 
-## Install Node.js, git and nginx
+## Install Node.js, git, and nginx
 ```bash
 sudo apt update 
 sudo apt install -y nodejs nginx git
@@ -142,6 +142,30 @@ sudo apt install -y nodejs nginx git
 ![image](https://github.com/user-attachments/assets/0dfe7838-5a5c-4239-a281-9dc765586335)
 
 ---
+## Clone the Repo & Build React App
+```bash
+git clone https://github.com/UnpredictablePrashant/TravelMemory.git
+cd TravelMemory/frontend
+npm install
+```
+
+## update the url.js file with the backend IP address
+![image](https://github.com/user-attachments/assets/9151d394-18f0-4b96-835c-437927ee525c)
+
+## Running the application at port 3000 
+```bash
+sudo npm start   
+```
+## Screenshots
+![image](https://github.com/user-attachments/assets/903af114-33e2-4d5d-b5a6-ff58fae70f72)
+![image](https://github.com/user-attachments/assets/38159cb3-a46c-445a-a3b1-99cc0567284d)
+
+
+---
+
+
+
+
 
 
 
