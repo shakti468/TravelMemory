@@ -253,6 +253,40 @@ sudo npm start
 
 ![image](https://github.com/user-attachments/assets/95e16588-717b-4069-9756-1b9e802ef60f)
 
+---
+
+### Domain Setup with Cloudflare
+- Use Cloudflare to link your custom domain with the deployed application.
+- Add a CNAME record in Cloudflare that points to the frontend load balancer's DNS name.
+- In your frontend's url.js file put the DNS of backend load balancer.
+## Again, the load balancer was created due to the termination of the previous one.
+
+- DNS of backend load balancer- Shakti-lb-backend-1446603955.ap-south-1.elb.amazonaws.com
+- DNS of frontend load balancer- Shakti-lb-frontend-1375274914.ap-south-1.elb.amazonaws.com
+
+## App running with new frontend loadbalancer's DNS
+![image](https://github.com/user-attachments/assets/c76509f0-c943-44ce-99de-78ad8db29068)
+
+## Cloudflare
+- Add a CNAME record in Cloudflare that points to the frontend load balancer's DNS name.
+  ![image](https://github.com/user-attachments/assets/017d0c4c-d0be-47ef-9fe6-c379480a66e9)
+  ![image](https://github.com/user-attachments/assets/8893be30-8d5a-4736-8c3a-04a56658404a)
+
+## In your frontend's url.js file put the DNS of backend load balancer.
+
+![image](https://github.com/user-attachments/assets/cbee6934-d9ce-440a-8e39-6fac3e0af90d)
+
+
+## Lets run the application using domain name 
+
+![image](https://github.com/user-attachments/assets/87601c1f-9bf4-402b-afa7-27ad7dfc54c6)
+
+
+
+
+
+
+
 
 
 
