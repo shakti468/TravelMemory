@@ -163,6 +163,113 @@ sudo npm start
 
 ---
 
+## The instance's IP address changed after it was stopped.
+- Private IP for frontend: 172.31.7.70   
+- Public IP for frontend: 3.111.36.30 
+- Private IP for backend: 172.31.13.117
+- Public IP for backend: 13.201.75.234
+
+## After doing the reverse proxy, the frontend will be running at port 80
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/06a783bf-5c4f-47ee-af51-c50dea88f3e2)
+
+---
+
+## Load balancer to handle the traffic
+- Create multiple instances of both the front-end and backend servers.
+- Add these instances to a load balancer to distribute incoming traffic.
+
+## Creating AMI's for both frontend and backend
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/99f431a6-fa0c-4ec7-bd1e-cc8d81080cb4)
+![image](https://github.com/user-attachments/assets/3e11eea0-062c-428e-ab0c-e418c3a876d3)
+![image](https://github.com/user-attachments/assets/c0f611b5-7f97-40ac-8267-abb72834e50b)
+![image](https://github.com/user-attachments/assets/7b63ba3c-0b0f-4221-86e7-a720590e59ca)
+![image](https://github.com/user-attachments/assets/c3f2f37b-368b-4261-818c-f228948b7a51)
+![image](https://github.com/user-attachments/assets/8f9d2b02-f63a-4580-8150-76a0d56152fb)
+
+## Creating target group for frontend
+- EC2 > Target groups > Create target group
+
+ ## Screnshoot
+ ![image](https://github.com/user-attachments/assets/7bfcfe8f-ea62-4ef3-acc9-268c779b4e16)
+ ![image](https://github.com/user-attachments/assets/009c7d86-6c93-4ecd-a63f-75081a045066)
+ ![image](https://github.com/user-attachments/assets/612b1122-088c-4235-af8f-cf007b7f1af6)
+
+---
+ 
+ 
+ 
+ ## Create the application load balancer based on the target group
+ - EC2 > Load balancers > Create Application Load Balancer
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/82037c63-2ed9-482f-ae52-5b3990d20bc5)
+![image](https://github.com/user-attachments/assets/6cc47d90-02de-4322-8e0f-3bde0d9b3cb7)
+![image](https://github.com/user-attachments/assets/e11c9949-c210-4265-aa0d-4266c9ad3c18)
+
+
+
+
+## Create target group for backend 
+- EC2 > Target groups > Create target group
+
+ ## Screnshoot
+ ![image](https://github.com/user-attachments/assets/88686ae0-695b-4472-9fb5-813e5e7b72d3)
+ ![image](https://github.com/user-attachments/assets/a3623098-7b81-4c37-bfec-ca6f2ea80b2a)
+ ![image](https://github.com/user-attachments/assets/fc209de6-bf5b-4641-ac7e-9622e13c0eb7)
+
+---
+
+
+
+ ## Create the application load balancer based on the target group
+- EC2 > Load balancers > Create Application Load Balancer
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/13d9cf6a-9aad-4be0-83dd-9cd1a5b1fc6e)
+![image](https://github.com/user-attachments/assets/b47cacce-f723-4318-896a-669cd3b781c2)
+![image](https://github.com/user-attachments/assets/ef595105-13f5-498d-9495-85086b21d202)
+
+
+### Both the Load Balancers are active
+
+![image](https://github.com/user-attachments/assets/09234b8d-027c-4ddb-b38a-397466d1ff48
+
+## DNS 
+- DNS of backend load balancer- Shakti-lb-backend-471755778.ap-south-1.elb.amazonaws.com
+- DNS of frontend load balancer- Shakti-lb-frontend-1826694796.ap-south-1.elb.amazonaws.com
+
+
+### Put the backend load balancer's DNS in frontend's url.js 
+
+![image](https://github.com/user-attachments/assets/fcdd7072-ae8d-437a-b84d-cfaab044b341)
+
+---
+### Now open your Frontend Load Balancer DNS in the browser
+
+![image](https://github.com/user-attachments/assets/95e16588-717b-4069-9756-1b9e802ef60f)
+
+
+
+
+
+ 
+  - 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
