@@ -281,6 +281,14 @@ sudo npm start
 
 ![image](https://github.com/user-attachments/assets/87601c1f-9bf4-402b-afa7-27ad7dfc54c6)
 
+---
+
+### The data gets stored in the MongoDB database.
+
+![image](https://github.com/user-attachments/assets/62460268-d228-42eb-bab9-be383c7bd43f)
+
+
+
 
 
 
